@@ -21,6 +21,8 @@ body {
 
 
 /* -----------------------------------------------------Head Bereich------------------------------------------------------- */
+
+
 .header {
     display: flex;
     flex-direction: column;
@@ -42,7 +44,11 @@ body {
     font-weight: bold;
 }
 
+
+
 /* ----------------------------------------------------Pokedexkarten--------------------------------------------------------- */
+
+
 #pokedexContainer {
     display: flex;
     flex-wrap: wrap;
@@ -254,7 +260,10 @@ body {
 }
 
 
+
 /* ---------------------------------------------------Pokemonkarte---------------------------------------------------------- */
+
+
 #pokecardContainer {
     display: flex;
     justify-content: center;
@@ -361,9 +370,14 @@ body {
     width: 275px;
     position: relative;
     z-index: 2;
+    object-fit: contain;
 }
 
+
+
 /* --------------------------------------------------2ter Großer Container------------------------------------------------ */
+
+
 .info-container {
     padding-bottom: 15%;
     background-color: white;
@@ -399,6 +413,9 @@ body {
     height: 80%;
     color: black;
 }
+
+
+
 /* -----------------------------------------------------About Container--------------------------------------------------- */
 
 
@@ -444,6 +461,9 @@ span {
     display: flex;
     flex-direction: column;
 }
+
+
+
 /* ----------------------------------------------------Load Base Container------------------------------------------------ */
 
 
@@ -498,6 +518,7 @@ dl.horizontal dd span {
     display:block; color:#ffffff;
     text-indent:4px;
 }
+
 
 
 /* ----------------------------------------------------Load Moves Container----------------------------------------------- */

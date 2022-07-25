@@ -1,0 +1,657 @@
+body {
+    margin: 0px;
+    font-family: 'open Sans', sans-serif;
+    background-image: url(./img/background.jpg);
+    overflow-y: scroll;
+}
+
+
+
+
+.main-container {
+    padding: 20px;
+    /* height: 120vh; */
+    min-height: 100%;
+}
+
+.d-none {
+    display: none !important;
+}
+
+
+
+/* -----------------------------------------------------Head Bereich------------------------------------------------------- */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logo {
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+#find-pokemon {
+    height: 40px;
+    border-radius: 20px;
+    width: 250px;
+    background-color: #fce568;
+    font-size: large;
+    font-weight: bold;
+}
+
+/* ----------------------------------------------------Pokedexkarten--------------------------------------------------------- */
+#pokedexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 120vh;
+    justify-content: center;
+}
+
+.pokedex {
+    width: 300px;
+    height: 200px;
+    border-radius: 25px;
+    display: flex;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    background-size: cover;
+    background-position-x: center;
+    transition: transform 225ms;
+}
+
+.pokedex:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+/* -------------linke Seite---------- */
+.Id-Number {
+    margin-top: 0px;
+}
+
+.pokedex-specs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    padding-top: 30px;
+}
+
+.pokemon-type-btn {
+    font-size: large;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    min-width: 80px;
+    margin-bottom: 5px;
+}
+
+/* -----------rechte Seite----------- */
+.pokedex-img {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    align-items: end;
+    flex-direction: column;
+}
+
+.pokemonIMG {
+    height: 130px;
+    width: 135px;
+}
+
+.grass {
+    background-image: url(./img/grass.jpg);
+    color: white;
+}
+
+.grass2 {
+    color: #67991c;
+}
+
+.water {
+    background-image: url(./img/wasser.jpg);
+    color: white;
+}
+
+.water2 {
+    color: #1187b7;
+}
+
+
+.fire {
+    background-image: url(./img/fire.jpg);
+    color: white;
+}
+
+.fire2 {
+    color: #c53626;
+}
+
+.poison {
+    background-image: url(./img/poison.png);
+    color: white;
+}
+
+.poison2 {
+    color: #6e4259;
+}
+
+.normal {
+    background-image: url(./img/colorless.jpg);
+    color: white;
+}
+
+.normal2 {
+    color: #8c8662;
+}
+
+
+.electric {
+    background-image: url(./img/electric.jpg);
+    color: white;
+}
+
+.electric2 {
+    color: #cbb929;
+}
+
+.flying {
+    background-image: url(./img/flying.png);
+    color: white;
+}
+
+.bug {
+    background-image: url(./img/bug.png);
+    color: white;
+}
+
+.bug2 {
+    color: #1e5e2e;
+}
+
+.dragon {
+    background-image: url(./img/dragon.png);
+    color: white;
+}
+
+.dragon2 {
+    color: #9f892c;
+}
+
+.ice {
+    background-image: url(./img/ice.png);
+    color: white;
+}
+
+.ice2 {
+    color: #72acbe;
+}
+
+.steel {
+    background-image: url(./img/steel.png);
+    color: white;
+}
+
+.rock {
+    background-image: url(./img/rock.png);
+    color: white;
+}
+
+.rock2 {
+    color: #585048;
+}
+
+.fairy {
+    background-image: url(./img/fairy.png);
+    color: white;
+}
+
+.fairy2 {
+    color: #bf407e;
+}
+
+.psychic {
+    background-image: url(./img/psychic.jpg);
+    color: white;
+}
+
+.psychic2 {
+    color: #60396e;
+}
+
+.ground {
+    background-image: url(./img/ground.png);
+    color: white;
+}
+
+.ground2 {
+    color: #7e5228;
+}
+
+.fighting {
+    background-image: url(./img/fighting.jpg);
+    color: white;
+}
+
+.fighting2 {
+    color: #c65617;
+}
+
+.ghost {
+    background-image: url(./img/ghost.jpg);
+    color: white;
+}
+
+.ghost2 {
+    color: #420c0c;
+}
+
+
+/* ---------------------------------------------------Pokemonkarte---------------------------------------------------------- */
+#pokecardContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#pokecard {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 400px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+#myVideo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* The following will size the video to fit the full container. Not necessary, just nice.*/
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    z-index: 0;
+}
+
+.video {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius:  40px;
+    border-top-right-radius: 40px;
+}
+
+#back {
+    position: relative;
+    width: 40px;
+    z-index: 1;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+#back:hover {
+    cursor: pointer;
+}
+/* --------------Info Container------------ */
+.infos {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    padding-bottom: 13%;
+}
+
+.pokedex-specs2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 45%;
+    padding-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.pokedex-specs2 h1 {
+    margin-bottom: 5px;
+}
+
+#pokemonType5 {
+    width: 170px;
+    Display: flex;
+    Justify-content: space-between;
+}
+/* ----------Pokemon Number Container------ */
+.pokemonNumber {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 35%;
+}
+
+.Id-Number2 {
+    margin: 0px;
+    position: relative;
+    z-index: 1;
+}
+
+#seed {
+    position: relative;
+    z-index: 1;
+}
+
+/* ------------Container mit IMG----------- */
+.pokecard-img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 49%;
+}
+
+.pokemonIMG2 {
+    height: 250px;
+    width: 275px;
+    position: relative;
+    z-index: 2;
+}
+
+/* --------------------------------------------------2ter Großer Container------------------------------------------------ */
+.info-container {
+    padding-bottom: 15%;
+    background-color: white;
+    border-radius: 40px;
+    margin-top: -40px;
+    min-height: 100px;
+    width: 400px;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;    
+}
+
+.navbar a {
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    color: #b9b9b9;
+    border-bottom: 6px solid transparent;
+}
+
+.navbar a:hover {
+    color: black;
+    border-bottom: 3px solid;
+    padding-bottom: 3px;
+    transition: all 225ms ease-in-out;
+}
+
+.navbar-content {
+    height: 80%;
+    color: black;
+}
+/* -----------------------------------------------------About Container--------------------------------------------------- */
+
+
+.about {
+    padding-left: 5%;
+}
+
+.container1 {
+    display: flex;
+    padding-top: 5%;
+}
+
+.titles {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    font-weight: bold;
+    color: #b9b9b9;
+}
+
+span {
+    padding-bottom: 10px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.titles2Container {
+    display: flex;
+}
+
+#titles2 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    font-weight: bold;
+    color: #b9b9b9;
+}
+
+.eggTitle {
+    display: flex;
+    flex-direction: column;
+}
+/* ----------------------------------------------------Load Base Container------------------------------------------------ */
+
+
+.titles3 {
+    font-weight: bold;
+    color: #b9b9b9;
+}
+
+.mainContainerBase {
+    display: flex;
+    padding: 5%;
+    flex-direction: column;
+}
+
+.baseStats {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    justify-content: space-between;
+}
+
+dl.horizontal {
+    width:250px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+dl.horizontal dt {
+    float:left;
+    width:30px;
+    clear:both; 
+    margin:0 0 5px 0; 
+    font-weight: bold;
+    padding-right: 5px;
+    color: black;
+}
+
+dl.horizontal dd {
+    float:left;
+    width:220px;
+    margin:0 0 5px 0;
+    padding:2px;
+    background-color: #ececec;
+    height: 2px;
+    align-items: center; 
+    display: flex;
+}
+
+dl.horizontal dd span {
+    background:#17d340; 
+    display:block; color:#ffffff;
+    text-indent:4px;
+}
+
+
+/* ----------------------------------------------------Load Moves Container----------------------------------------------- */
+
+
+.mainContainerMoves {
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.specs {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.centerSpecs {
+    align-items: center;
+}
+
+.typeBtn {
+    border-radius: 20px;
+    min-width: 71px;
+}
+
+.typesCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spanZero {
+    padding: 0;
+}
+
+.spanTypes {
+    padding-bottom: 9px;
+}
+
+
+@media(max-width: 430px) {
+
+    #pokecard {
+        width: 340px;
+        height: 600px;
+    }
+
+    .video {
+        height: 400px;
+    }
+
+    .info-container {
+        width: 340px;
+    }
+
+    #back {
+        width: 30px;
+    }
+
+    h1 {
+        font-size: x-large;
+    }
+
+    h2 {
+        font-size: x-large;
+    }
+
+    #pokemonType5 {
+        width: 125px;
+    }
+
+    .pokemon-type-btn {
+        font-size: medium;
+        padding-left: 0;
+        padding-right: 0;
+        min-width: 59px;
+    }
+
+    .infos {
+        padding-bottom: 0;
+    }
+
+    .pokecard-img {
+        height: 48%;
+    }
+
+    .pokemonIMG2 {
+        height: 160px;
+        width: 185px;
+    }
+
+    /* Unterer Teil der Karte */
+
+    .navbar {
+        padding-top: 32px;
+    }
+
+    .container1 {
+        padding-top: 3%;
+    }
+
+    .titles {
+        font-size: 15px;
+        width: 28%;
+    }
+
+    .text {
+        font-size: 15px;
+    }
+
+    h3 {
+        font-size: medium;
+        margin-top: 5px;
+    }
+
+    #titles2 {
+        font-size: 15px;
+    }
+
+    .eggTitle {
+        font-size: 15px;
+    }
+
+    span {
+        padding-bottom: 7px;
+    }
+
+
+    /* Für Base Stats Bereich */
+    
+    dl.horizontal dd {
+        width: 163px;
+    }
+
+
+    /* Für Move Stats Bereich */
+
+    .spanTypes {
+        padding-bottom: 6px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

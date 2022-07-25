@@ -34,12 +34,12 @@ window.onscroll = async function() {
 
 async function scroll() {
     waitOnPokemon = false;
-    if (pokemonAmount == 20) {
+    if (pokemonAmount == 10) {
         nr += pokemonAmount;
     }else {
         nr = pokemonAmount + 1;
     }
-    pokemonAmount += 20;      
+    pokemonAmount += 10;      
     await loadPokemon(nr);
     waitOnPokemon = true;
 }
